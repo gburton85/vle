@@ -1,21 +1,21 @@
 {
-  "name": "treehouse-express-basics",
+  "name": "Smash Learning",
   "version": "1.0.0",
-  "description": "This repo features an express app to serve as demo in the Express Basics course on Treehouse.",
+  "description": "This repo features the smash learning platform",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hdngr/treehouse-express-basics.git"
+    "url": "git+https://github.com/gburton85/vle"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hdngr/treehouse-express-basics/issues"
+    "url": "https://github.com/gburton85/vle"
   },
-  "homepage": "https://github.com/hdngr/treehouse-express-basics#readme",
+  "homepage": "https://github.com/gburton85/vle#readme",
   "dependencies": {
     "express": "^4.13.4",
     "jade": "^1.11.0"
