@@ -1,0 +1,20 @@
+{
+	"Week1":{
+		"tags": ["algebra", "pythag", "angles"],
+    	"modules": [
+        { "id": 1, "completed": false, "averageTime": "2 hours"}
+   	 ]
+		},
+	"Week2":{
+
+		},
+	"Week3":{
+
+		},
+	"Week4":{
+
+		},
+	"Week5":{
+
+		}
+}

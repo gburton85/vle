@@ -1,7 +1,7 @@
 'use strict';
 
 var express = require('express');
-var	posts = require('./mock/posts.json');
+var	posts = require('./mock/subjects.json');
 
 var postsLists = Object.keys(posts).map(function(value){
 	return posts[value]})
@@ -26,11 +26,22 @@ app.get('/studentHome/:title?', function(req, res){
 		res.render('studentHome', {posts: postsLists})
 	} else {
 	var post = posts[title] || {};
-	res.render('post', { post: post});
+	res.render('subjects', { post: post});
 	}
 })
 
-app.get('/posts', function(req, res){
+app.get('/teacherHome/:title?', function(req, res){
+	var title = req.params.title;
+	if (title === undefined) {
+		res.status(503);
+		res.render('teacherHome', {posts: postsLists})
+	} else {
+	var post = posts[title] || {};
+	res.render('subjects', { post: post});
+	}
+})
+
+app.get('/subjects', function(req, res){
 	if (req.query.raw){
 		res.json(posts);
 	} else {
