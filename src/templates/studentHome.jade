@@ -5,10 +5,4 @@ block content
         .header-content
             .header-content-inner
               .row
-                    each post in posts
-                        .post
-                        .col-lg-4.text-center.portfolio-box
-                          .box1
-                            h2.sectionheading #{post.title}
-                            hr.light
-                            a(href='/studentHome/' + post.title).btn.btn-default Go!
+                #app(data-posts=posts)
