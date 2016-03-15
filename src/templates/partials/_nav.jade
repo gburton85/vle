@@ -1,18 +1,12 @@
 nav#mainNav.navbar.navbar-default.navbar-fixed-top
   .container-fluid
-      // Brand and toggle get grouped for better mobile display
       .navbar-header
         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
           span.sr-only Toggle navigation
-          |                     
           span.icon-bar
-          |                     
           span.icon-bar
-          |                     
           span.icon-bar
-        |                 
         a.navbar-brand.page-scroll(href='/') Smash Learning
-      // Collect the nav links, forms, and other content for toggling
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
           li
@@ -21,31 +15,16 @@ nav#mainNav.navbar.navbar-default.navbar-fixed-top
               a(href='/teacherHome') Teachers
           if path === '/'
             li
-                a.page-scroll(href='#about') About
-                                 
+              a.page-scroll(href='#about') About
             li
-                a.page-scroll(href='#pricing') Pricing
-            |                     
+              a.page-scroll(href='#pricing') Pricing
             li
-                a.page-scroll(href='#portfolio') Portfolio
-            |                     
+              a.page-scroll(href='#portfolio') Portfolio
             li
-                a.page-scroll(href='#contact') Contact
-
-             li.dropdown
-                      a.dropdown-toggle(href='#', data-toggle='dropdown')
-                        | Sign In 
-                        strong.caret
-                      .dropdown-menu(style='padding: 20px;')
-                        // Login form here
-                        form(action='/login', method='post')#formLogin.form
-                          input#username(name='email', type='text', placeholder='Email')
-                          input#password(name='password', type='password', placeholder='Password')
-
-                          br
-                          button#btnLogin.btn(type='submit') Login
-                          button#btnLogin.btn(type='button') Sign Up
-
-
-            // /.navbar-collapse
-            // /.container-fluid   
+              a.page-scroll(href='#contact') Contact
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Sign In
+                strong.caret
+              .dropdown-menu(style='padding: 20px;')
+                #vle-react-login
