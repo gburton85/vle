@@ -448,7 +448,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn {
     border: 0;
-    border-radius: 300px;
+    border-radius: 10px;
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
@@ -489,3 +489,12 @@ body {
     padding: 20px;
     margin: 20px;
 }
+
+/*login form*/
+#username, #password, #btnLogin, select {
+  margin:5px;
+}
+#btnLogin {
+    font-size: 12px;
+}
+

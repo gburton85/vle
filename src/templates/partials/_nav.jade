@@ -31,5 +31,21 @@ nav#mainNav.navbar.navbar-default.navbar-fixed-top
             |                     
             li
                 a.page-scroll(href='#contact') Contact
+
+             li.dropdown
+                      a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        | Sign In 
+                        strong.caret
+                      .dropdown-menu(style='padding: 20px;')
+                        // Login form here
+                        form(action='/login', method='post')#formLogin.form
+                          input#username(name='email', type='text', placeholder='Email')
+                          input#password(name='password', type='password', placeholder='Password')
+
+                          br
+                          button#btnLogin.btn(type='submit') Login
+                          button#btnLogin.btn(type='button') Sign Up
+
+
             // /.navbar-collapse
             // /.container-fluid   

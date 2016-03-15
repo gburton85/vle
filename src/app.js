@@ -49,6 +49,11 @@ app.get('/subjects', function(req, res){
 	}
 })
 
+app.get('login', function(req, res){
+	ajax('localhost:1337/login')
+})
+
+
 app.listen(3000, function(){
 	console.log("The frontend server is running on port 3000!")
 });
