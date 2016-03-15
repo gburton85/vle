@@ -49,8 +49,8 @@ app.get('/subjects', function(req, res){
 	}
 })
 
-app.get('login', function(req, res){
-	ajax('localhost:1337/login')
+app.post('/login', function(req, res){
+	fetch('localhost:1337/login')
 })
 
 

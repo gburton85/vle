@@ -1,5 +1,21 @@
 
-# install node dependencies
-npm install
+### Install dependencies
 
-nodemon src/app.js
+```
+$ npm install
+
+```
+
+### Start dev server
+
+```
+$ npm run start:dev
+
+```
+
+### Start server
+
+```
+$ npm start
+
+```
