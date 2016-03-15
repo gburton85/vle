@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
     include ./partials/_head.jade
-    
+
     body#page-top
       include ./partials/_nav.jade
       block content
@@ -9,12 +9,14 @@ html(lang="en")
 
 
 
-script(src='/static/js/jquery.js')
+script(src='/static/js/libs/jquery.js')
 //bootstrap
-script(src='/static/js/bootstrap.min.js')
+script(src='/static/js/libs/bootstrap.min.js')
 //plugins
-script(src='/static/js/jquery.easing.min.js')
-script(src='/static/js/jquery.fittext.js')
-script(src='/static/js/wow.min.js')
+script(src='/static/js/libs/jquery.easing.min.js')
+script(src='/static/js/libs/jquery.fittext.js')
+script(src='/static/js/libs/wow.min.js')
 //custom
-script(src='/static/js/creative.js')
+script(src='/static/js/libs/creative.js')
+//client bundle
+script(src='/static/js/bundle.js')
