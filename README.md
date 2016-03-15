@@ -19,3 +19,10 @@ $ npm run start:dev
 $ npm start
 
 ```
+
+### Client dev
+
+```
+$ npm run client:dev
+
+```
